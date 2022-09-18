@@ -6,36 +6,73 @@
         display: flex;
         flex-direction: row;
         height: 40px;
+        justify-content:space-around ;
+        background-color: antiquewhite;
     }
-    .subhome{
+    .main:hover{
+        background-color: aliceblue;
+        transition: 0.5s;
+        cursor: pointer;
+        color: darkslateblue;
+    }
+    .line{
         display: flex;
-        background-color: gray;
-        border: 2px solid black;
+        justify-content: center;
+        font-size: 35px;
+        font-family: monospace;
+    }
+    .line2{
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+    }
+    .box{
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        height: 30px;
+        justify-content: space-evenly;
+    }
+    .UD{
+        background-color: bisque;
+        border: 2px solid wheat;
+        height: 250px;
+        width: 200px;
+        box-shadow: 2px 2px 3px wheat;
     }
     </style>
 </head>
 <body>
     <img src="C:\Users\hp\Desktop\travel-booking\logo.png" height="50px" width="120px"><br><br>
-   <div class="home"> <input type="search" id="gsearch" name="gsearch"  placeholder="Search entire site here...">
-      <img src="C:\Users\hp\Desktop\travel-booking\call logo.jfif" height="50px" width="60px" style="margin-left: 300px;">
-      24/07 customer number <br>123 555 647
+   <div class="home"> 
+       <div class="main" style="height:30px; font-size: 25px;">Home</div>
+       <div class="main" style="height: 30px; font-size: 25px;">About</div>
+       <div class="main" style="height:30px; font-size: 25px;">Tours</div>
+       <div class="main" style="height:30px; font-size: 25px;">Contact</div>
    </div><br><br>
-   <div class="subhome">
-   <b style="height: 25px;">Menu</b>
-    <select name="select">
-        <option value="sel">Select as per choice</option>
-        <option value="hotel">Hotels</option>
-        <option value="flight">Flights</option>
-        <option value="ho-fli">Hotels+Flights</option>
-    </select>
-   </div>
     <marquee behavior="alternate" direction="left">
         <img src="C:\Users\hp\Desktop\travel-booking\travel img1.jpg" height="250px" width="400px">
         <img src="C:\Users\hp\Desktop\travel-booking\travel img2.jpg." height="250px" width="400px">
         <img src="C:\Users\hp\Desktop\travel-booking\travel img3.jpg" height="250px" width="400px">
-    </marquee>
+    </marquee><br><br><br>
+    <b class="line"> Why choose Book Your Travel</b><br>
+       <span  class="line2">We offer most competitive rates and offers for beautiful places.</span><br><br>
+    <div class="box">
+        <div class="UD">
+           <img src="C:\Users\hp\Desktop\travel-booking\feature-1.png" height="50px" width="50px" style="margin-left: 75px; margin-top: 10px;"><br><br><br>
+           <b style="margin-left: 35px;">Unique Destintions</b><br><br>
+           <span style="padding-left: 30px;"> Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.</span>
+        </div>
+
+        <div class="UD">
+            <img src="C:\Users\hp\Desktop\travel-booking\feature-2.png" height="50px" width="50px" style="margin-left: 75px; margin-top: 10px;"><br><br><br>
+            <b style="margin-left: 35px;">Worth of Money</b><br><br>
+            <span style="padding-left: 30px;"> Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.</span>
+         </div>
+
+         <div class="UD">
+            <img src="C:\Users\hp\Desktop\travel-booking\feature-3.png" height="50px" width="50px" style="margin-left: 75px; margin-top: 10px;"><br><br><br>
+            <b style="margin-left: 35px;">Wonderful Places</b><br><br>
+            <span style="padding-left: 30px;"> Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.</span>
+         </div>
+    </div>
 </body>
 </html>
