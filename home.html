@@ -2,7 +2,7 @@
     <head>
     <title>Travel Booking</title>
     <style>
-    .home{
+    .nav{
         display: flex;
         flex-direction: row;
         height: 40px;
@@ -26,46 +26,69 @@
         justify-content: center;
         font-size: 15px;
     }
-    .box{
+    .feature-container{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
     }
-    .box2{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .UD{
+    .features{
         background-color: white;
         border: 2px solid whitesmoke;
         height: 250px;
         width: 300px;
+        border-radius: 20px;
+        padding: 10px;
         box-shadow: 2px 2px 3px whitesmoke;
     }
-    .feature{
+    .features:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px 5px rgb(232, 226, 226);
+    }
+    .features-image{
+        margin-left: 125px; 
+        margin-top: 10px;
+        height: 50px;
+        width: 50px;
+    }
+    .featured-packages-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
         font-size: 35px;
     }
-    .trip{
+    .featured-destinations-container{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .img{
-        border: 2px solid blanchedalmond;
+    .destinations-info-container{
+        border: 1px solid rgb(247, 233, 212);
         box-shadow: 2px 2px 3px whitesmoke;
-        height: 600px;
-        width: 350px;
+        height: 650px;
+        width: 320px;
+        border-radius: 20px;
         padding: 20px;
+    }
+    .destinations-info-container:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 3px 3px 3px 4px rgb(248, 241, 232);
+    }
+    .destinations-info-image{
+        height:"350px";
+        width:"300px";
+        display: block;
+        margin: auto;
+        height: 350px;
+        width: 300px;
     }
     </style>
 </head>
 <body>
     <img src="C:\Users\hp\Desktop\travel-booking\logo.png" height="50px" width="120px"><br><br>
-   <div class="home"> 
+   <div class="nav"> 
        <div class="main" style="height:30px; font-size: 25px;">Home</div>
        <div class="main" style="height: 30px; font-size: 25px;">Tours</div>
        <div class="main" style="height:30px; font-size: 25px;">About</div>
@@ -78,62 +101,62 @@
     </marquee><br><br><br>
     <b class="line"> Why choose Book Your Travel</b><br>
        <span  class="line2">We offer most competitive rates and offers for beautiful places.</span><br><br>
-    <div class="box">
-        <div class="UD">
-           <img src="C:\Users\hp\Desktop\travel-booking\feature-1.png" height="50px" width="50px" style="margin-left: 125px; margin-top: 10px;"><br><br><br>
+    <div class="feature-container">
+        <div class="features">
+           <img src="C:\Users\hp\Desktop\travel-booking\feature-1.png" class="features-image"><br><br><br>
            <b style="margin-left: 85px;">Unique Destintions</b><br><br>
            <span style="padding: 80px;"> Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.</span>
         </div>
 
-        <div class="UD">
-            <img src="C:\Users\hp\Desktop\travel-booking\feature-2.png" height="50px" width="50px" style="margin-left: 125px; margin-top: 10px;"><br><br><br>
+        <div class="features">
+            <img src="C:\Users\hp\Desktop\travel-booking\feature-2.png" class="features-image"><br><br><br>
             <b style="margin-left: 85px;">Worth of Money</b><br><br>
             <span style="padding-left: 80px;"> Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.</span>
          </div>
 
-         <div class="UD">
-            <img src="C:\Users\hp\Desktop\travel-booking\feature-3.png" height="50px" width="50px" style="margin-left: 125px; margin-top: 10px;"><br><br><br>
+         <div class="features">
+            <img src="C:\Users\hp\Desktop\travel-booking\feature-3.png" class="features-image"><br><br><br>
             <b style="margin-left: 85px;">Wonderful Places</b><br><br>
             <span style="padding-left: 80px;"> Looking for a unique vacation destination? Then maybe a trip to one of the 10 most unique tourist destinations might.</span>
          </div>
     </div><br><br><br>
-    <div class="box2">
-        <div class="UD">
-            <img src="C:\Users\hp\Desktop\travel-booking\feature-4.png" height="50px" width="50px" style="margin-left: 125px; margin-top: 10px;"><br><br><br>
+    <div class="feature-container">
+        <div class="features">
+            <img src="C:\Users\hp\Desktop\travel-booking\feature-4.png" class="features-image"><br><br><br>
             <b style="margin-left: 85px;">Quick Booking</b><br><br>
             <span style="padding: 80px;">Booking is quick as clicking a few clicks. We take care of all transportation and accommodations during your journey.</span>
          </div> 
 
-         <div class="UD">
-            <img src="C:\Users\hp\Desktop\travel-booking\feature-5.png" height="50px" width="50px" style="margin-left: 125px; margin-top: 10px;"><br><br><br>
+         <div class="features">
+            <img src="C:\Users\hp\Desktop\travel-booking\feature-5.png" class="features-image"><br><br><br>
             <b style="margin-left: 85px;">Backup Team</b><br><br>
             <span style="padding: 80px;"> We have staff to assist in all stages of your holiday, from travel advice & best prices to ground handling & support during your holiday.</span>
          </div>
 
-         <div class="UD">
-            <img src="C:\Users\hp\Desktop\travel-booking\feature-6.png" height="50px" width="50px" style="margin-left: 125px; margin-top: 10px;"><br><br><br>
+         <div class="features">
+            <img src="C:\Users\hp\Desktop\travel-booking\feature-6.png" class="features-image"><br><br><br>
             <b style="margin-left: 85px;">Exciting Travel</b><br><br>
             <span style="padding: 80px;"> We have a wide range of expertise and knowledge in our services. So we can provide you an exciting travel experience.</span>
          </div>
     </div><br><br><br>
-    <div class="feature"><b>Featured Packages</b></div><br><br>
-        <div class="trip">
-            <div class="img">
-                <img src="C:\Users\hp\Desktop\travel-booking\dubai-featured-720x560.jpg" height="350px" width="300px" style="margin-left: 15px;"><br><br>
+    <div class="featured-packages-container"><b>Featured Packages</b></div><br><br>
+        <div class="featured-destinations-container">
+            <div class="destinations-info-container">
+                <img src="C:\Users\hp\Desktop\travel-booking\dubai-featured-720x560.jpg" class="destinations-info-image"><br><br>
                 <b style="margin-left: 80px; font-size:25px">Fabulous Dubai</b><br><br>
                 <span>Dubai is situated on the Persian Gulf coast of the United Arab Emirates and is roughly at sea level (16 m or 52 ft above). The emirate of Dubai shares borders with Abu Dhabi in the south, Sharjah in the northeast, and the Sultanate of Oman in the southeast. Hatta, a minor exclave of the emirate, is surrounded on three
                      sides by Oman and by the emirates of Ajman (in the west) and Ras Al Khaimah (in the north). The Persian Gulf borders the western coast of the emirate.</span><br><br>
                 <del>$1,950</del><b> $1,450</b>
             </div>
-            <div class="img">
-                <img src="C:\Users\hp\Desktop\travel-booking\maldives-featured.jpg" height="350px" width="300px" style="margin-left: 15px;"><br><br>
+            <div class="destinations-info-container">
+                <img src="C:\Users\hp\Desktop\travel-booking\maldives-featured.jpg" class="destinations-info-image"><br><br>
                 <b style="margin-left: 80px; font-size:25px">Magical Maldives</b><br><br>
                 <span>The Maldives is a tropical nation in the Indian Ocean composed of 26 ring-shaped atolls, which are made up of more than 1,000 coral islands. It’s known for its beaches, blue lagoons and extensive reefs. The capital, Malé, has a busy fish market, restaurants and shops
                      on the main road, Majeedhee Magu, and 17th-century Hukuru Miskiy (also known as Friday Mosque) made of carved white coral.</span><br><br>
                 <b> $900</b>
             </div>
-            <div class="img">
-                 <img src="C:\Users\hp\Desktop\travel-booking\sydney-featured.jpg" height="350px" width="300px" style="margin-left:15px;"><br><br>
+            <div class="destinations-info-container">
+                 <img src="C:\Users\hp\Desktop\travel-booking\sydney-featured.jpg" class="destinations-info-image"><br><br>
                  <b style="margin-left: 80px; font-size:25px">Modern Sydney</b><br><br>
                  <span>Sydney, capital of New South Wales and one of Australia’s largest cities, is best known for its harbour front Sydney Opera House, with a distinctive sail-like design. Massive Darling Harbour and the smaller Circular Quay port are hubs of waterside life, with the arched Harbour 
                     Bridge and esteemed Royal Botanic Garden nearby. Sydney Tower’s outdoor platform, the Skywalk, offers 360-degree views of the city and suburbs.</span><br><br>
